@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- axiso cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"
+      integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- taliwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- titel icon add -->
+    <link rel="icon" type="imgs_search" href="download.png" />
+    <title>Image_Search_App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="px-2 py-4 bg-slate-50">
+    <div>
+      <!-- header start -->
+      <header>
+        <h1 class="text-center text-3xl text-blue-700 font-semibold">
+          Image Search App
+        </h1>
+        <!-- search icon start -->
+        <div class="text-center mt-4">
+      
+            <input
+              class="px-4 py-2 border-2 rounded-full sm:w-6/12 w-11/12 text-xl shadow-sm"
+              type="search"
+              name="search"
+              id="search"
+              value=""
+              placeholder="Search For images"
+            />
+            
+        </div>
+        <!-- search icon end -->
+      </header>
+      <!-- header end -->
+      <!-- main start -->
+      <main>
+        <!-- images card start -->
+        <div class="mt-6" id="grid">
+          <!-- <div>
+           
+            <div
+              class="max-sm:w-10/12 m-auto p-2 border-2 rounded-sm shadow-sm bg-slate-50"
+            >
+              <img
+                class="m-auto rounded-sm max-sm:w-full"
+                src="download.jpg"
+                alt="no_image"
+              />
+              
+              <div>
+                <p class="text-sm text-start p-2 font-medium">
+                  "shallow focus photography of orange Volkswagen Beetle"
+                </p>
+              </div>
+              
+            </div>
+        
+          </div> -->
+       
+        </div>
+        <!-- image card end -->
+           <p id="center_p" class="text-center text-xl font-bold">You haven't named the image yet</p>
+      </main>
+      <!-- main end -->
+      <!-- footer start -->
+      <footer>
+        <div id="footer_button" class="hidden flex justify-center items-center">
+          <button
+            id="more_button"
+            type="submit"
+            class="text-center px-4 py-2 bg-sky-200 mt-6 text-blue-700 text-xl shadow-md rounded-xl duration-1000 hover:bg-sky-300 hover:text-blue-800 hover:shadow-xl font-semibold"
+          >
+            more...
+          </button>
+        </div>
+      </footer>
+      <!-- footer end -->
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
